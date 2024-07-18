@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --colorTexto: #0A3871;
+    --colorTextoProcesado: gray;
+    --colorFondo: #D8DFE8;
+    --colorFondoArea: #FFFFFF;
+
+    --fuenteTexto:"Inter", sans-serif;
+}
+::placeholder{
+    font-family: var(--fuenteTexto);
+    font-weight: 300;
+    color:var(--colorTexto);
+    font-size: 2rem;
+}
+body{
+    box-sizing: border-box;
+    background: var(--colorFondo) 
+
+}
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.contenido{
+    width:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    font-family: var(--fuenteTexto);
+    gap: 2rem;
+}
+.contenido__campo{
+    width:auto;
+    color:var(--colorTexto);
+    gap: 0.5rem;
+    align-items: center;
+}
+h2{
+    color:var(--colorTextoProcesado);
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+textarea{
+    width:auto;
+    background-color: var(--colorFondo);
+    font-family: var(--fuenteTexto);
+    font-weight: 300;
+    color:var(--colorTexto);
+    font-size: 2rem;
+    
+}
+.contenido__botones{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+.botonEncriptar{
+    background-color: var(--colorTexto);
+    color: var(--colorFondoArea);
+    font-family: var(--fuenteTexto);
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    width: 17.5rem;
+    padding: 1.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--colorTexto);
+}
+.botonEncriptar:hover
+{
+    color: var(--colorTexto);
+    background-color: var(--colorFondo);
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: cell;
+    border-width: 1rem;
+}
+.botonDesencriptar{
+    background-color: var(--colorFondo);
+    color: var(--colorTexto);
+    font-family: var(--fuenteTexto);
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    width: 17.5rem;
+    padding: 1.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--colorTexto);
+}
+.botonDesencriptar:hover
+{
+    color: var(--colorTexto);
+    background-color: var(--colorFondo);
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: cell;
+    border-width: 1rem;
+    border-color: var(--colorTexto);
+}
+.botonCopiar{
+    background-color: var(--colorFondoArea);
+    color: var(--colorTexto);
+    font-family: var(--fuenteTexto);
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    width: 17.5rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--colorTexto);
+}
+.botonCopiar:hover
+{
+    color: var(--colorTexto);
+    background-color: var(--colorFondo);
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: cell;
+    border-width: 1rem;
+    border-color: var(--colorTexto);
+}
+.contenido__texto__procesado{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--colorFondoArea);
+    padding: 4rem;
+    border-radius: 2rem;
+    font-family: var(--fuenteTexto);
+    font-weight:400;
+    color:var(--colorTextoProcesado);
+    font-size: 1.5rem;
+    box-shadow: inset;   
+}
+.imagenes__contenido{
+    width: 50%;
+}
+
+.piePagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuenteTexto);
+    font-weight:500;
+    color:var(--colorTextoProcesado);
+    font-size: 1rem;
+    padding: 1rem;
+    gap: 4rem;
+}
+
+.link{
+    color: var(--colorTexto);
+    text-decoration: none;
+}
+
+@media(max-width:768px)
+{
+    .cabecera{
+        padding: 10%;
+    }
+
+    .contenido{
+        flex-direction: column;
+        padding: 5%;
+    }
+    .contenido__campo{
+        width: auto;
+    }
+    textarea{
+        font-size: 1.5rem;
+    }
+    .botonCopiar
+    {
+        width: auto;
+    }
+    .botonDesencriptar
+    {
+        width: 50%;
+    }
+    .botonEncriptar{
+        width: 50%;
+    }
+}
+
+@media(max-width:375px)
+{
+    .cabecera{
+        padding: 10%;
+    }
+
+    .contenido{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contenido__botones{
+        flex-direction: column;
+        padding: 5%;
+        gap: 2rem;
+    }
+    .contenido__campo{
+        width: auto;
+    }
+    textarea{
+        font-size: 0.5rem;
+    }
+    .botonCopiar
+    {
+        width: auto;
+    }
+    .botonDesencriptar
+    {
+        width: 50%;
+    }
+    .botonEncriptar{
+        width: 50%;
+    }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="cabecera">
+        <img src="access/Logo.png" alt="Logo arula">
+        <img src="access/MiniIcono-removebg-preview-Photoroom.png" alt="Wahaha chikito">
+    </header>
+    <main class="contenido">
+        <section class="contenido__campo">
+            <textarea name="texto" id="texto" rows="15" cols="40" placeholder="Ingrese el texto aquí"></textarea>
+            <h2>
+                <img src="access/Group.png" alt="signo de exclamación">Solo letras minúsculas y sin acentos
+            </h2>
+            <div class="contenido__botones">
+                <button class="botonEncriptar" onclick="encriptar()" >Encriptar</button>
+                <button class="botonDesencriptar" onclick="desencriptar()" >Desencriptar</button>
+            </div>
+        </section>
+        <section class="contenido__texto__procesado">
+        <area class="texto__procesado" rows="100" cols="80" name="textoProcesado" id="textoProcesado">
+         
+            <h2 id="oracionProcesada"></h2>
+            <img class="imagenes__contenido" src="access/Muñeco (1).png" alt="Imagen de joven buscando" id="imagenJoven">
+            <img  class="imagenes__contenido" src="access/Frame 5.png" alt="Mensaje que indica la falta de texto a procesar" id="imagenTexto" >
+
+        </area>
+        <button class="botonCopiar" id="botonCopiar" onclick="copiar()" disabled="true">Copiar</button>
+        </section>
+    </main>
+    <footer class="piePagina">
+        <h2>Desarrollador por Ricardo Alfaro</h2>
+        <a class="link" href="https://github.com/ricardo1422?tab=repositories">Linkedin</a>
+    </footer>
+    <script src="encriptador.js"></script>
+</body>
+</html>
